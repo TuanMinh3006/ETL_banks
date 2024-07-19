@@ -15,6 +15,8 @@ Thu thập các thông tin vốn hóa theo thị trường của các ngân hàn
 ## Phần 1: Extract
 Mục đích: Thu thập thông tin (Tên, MC_USD_Billion) của Top 10 ngân hàng có vốn hóa thị trường lớn nhất Thế Giới
 
+Thư viện sử dụng: Beautiful Soup, request, pandas
+  
 Input: https://web.archive.org/web/20230908091635%20/https://en.wikipedia.org/wiki/List_of_largest_banks
 
 ![image](https://github.com/user-attachments/assets/902a3881-0034-4e88-9750-e653f0e361c2)
@@ -28,6 +30,8 @@ Output: Trả về 1 dataframe lưu Tên, MC_USD_Billion của Top 10 ngân hàn
 
 Mục đích: Chuyển đổi từ USD thành EUR và INR(Rupee Ấn Độ) và GBP(Bảng Anh)
 
+Thư viện sử dụng: pandas
+
 Input: DataFrame đã được thu thập từ phần extract
 
 ![Task_2c_extract](https://github.com/user-attachments/assets/27689e66-4cf1-4b59-ab50-a52d60fc2191)
@@ -39,6 +43,8 @@ Output: Trả về một dataframe gồm 4 cột : Name, MC_USD_Billion,MC_GBP_B
 
 Mục đích: Load dataframe đã transform thành file .CSV và lưu vào database SQL có tên Banks.db 
 
+Thư viện sử dụng: pandas, sqlite3
+  
 Input: Dataframe đã được transform trên
 
 OutPut: 
@@ -53,6 +59,8 @@ File .CSV và file database
 
 ## Phần 4: Log
 Mục đích: Ghi lại các quá trình ETL nhằm quản lý thời gian và có thể nhận biết lỗi nếu xảy ra
+
+Thư viện sử dụng: datetime
 
 OutPut: 
 
