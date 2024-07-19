@@ -1,7 +1,7 @@
 # ETL_Banks
 ## Project ETL_Banks được chia làm 4 phần: Extract,Transform,Load,Log
 ## Mục đích:
-Thu thập các thông tin vốn hóa theo thị trường của các ngân hàng lớn trên Thế giới
+Thu thập các thông tin vốn hóa theo thị trường của các ngân hàng lớn trên Thế giới và chuyển đổi số tiền vốn hóa(USD) thành các đồng tiền khác trên TG và lưu vào file .CSV và lưu vào database.
 ## Ngôn ngữ sử dụng:
 + Python
 + SQL
@@ -37,7 +37,7 @@ Output: DataFrame đã được thêm cột
 Output: Trả về một dataframe gồm 4 cột : Name, MC_USD_Billion,MC_GBP_Billion,MC_EUR_Billion,MC_INR_Billion của top 10 ngân hàng
 ## Phần 3: Load
 
-Mục đích: Load dataframe đã transform thành file .CSV và lưu vào CSDL SQL có tên Banks.db 
+Mục đích: Load dataframe đã transform thành file .CSV và lưu vào database SQL có tên Banks.db 
 
 Input: Dataframe đã được transform trên
 
@@ -45,8 +45,11 @@ OutPut:
 
 ![image](https://github.com/user-attachments/assets/5a21a764-96b7-4752-99da-c3c40975d1c5)
 
+Nội dung file .CSV
+
 ![image](https://github.com/user-attachments/assets/d6581851-e113-4adc-a027-bf4d38036ee2)
 
+File .CSV và file database
 
 ## Phần 4: Log
 Mục đích: Ghi lại các quá trình ETL nhằm quản lý thời gian và có thể nhận biết lỗi nếu xảy ra
